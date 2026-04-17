@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/923401670436?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20access.";
+const WHATSAPP_LINK = "https://wa.me/923298646906?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20access.";
 
 const Navbar = () => (
   <motion.nav

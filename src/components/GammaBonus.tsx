@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Sparkles, Gift, Wand2, FileText, Globe, Crown } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/923401670436?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20%2B%20Gamma%20AI%20bonus.";
+const WHATSAPP_LINK = "https://wa.me/923298646906?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20%2B%20Gamma%20AI%20bonus.";
 
 const GammaBonus = () => (
   <section id="bonus" className="py-24 px-4 relative overflow-hidden">
