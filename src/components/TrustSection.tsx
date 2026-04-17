@@ -19,11 +19,8 @@ const TrustSection = () => (
         <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
           Peace of <span className="gradient-text">Mind</span>
         </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-4 text-lg">
-          <strong className="text-foreground">Stop getting scammed by temporary sellers.</strong> Chinoo's DP provides legitimate Canva Business invites that actually last.
-        </p>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-14 text-lg">
-          Your designs are <strong className="text-foreground">100% secure</strong>.
+        <p className="text-muted-foreground max-w-2xl mx-auto mb-14 text-lg leading-relaxed">
+          We use <strong className="text-foreground">genuine Canva Business seats</strong>. No educational tricks, no temporary links, no scams. Your designs are secure with <strong className="text-foreground">Chinoo's DP</strong>.
         </p>
       </motion.div>
 
