@@ -114,10 +114,10 @@ const StatusDashboard = () => (
       >
         <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-6">
           <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: "hsl(var(--status-online))" }} />
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ backgroundColor: "hsl(var(--status-online))" }} />
           </span>
-          <span className="text-xs font-semibold tracking-wider uppercase text-green-400">
+          <span className="text-xs font-semibold tracking-wider uppercase" style={{ color: "hsl(var(--status-online))" }}>
             System Status: Fully Operational
           </span>
         </div>
@@ -143,7 +143,7 @@ const StatusDashboard = () => (
               <div className="w-11 h-11 rounded-xl gradient-bg flex items-center justify-center">
                 <stat.icon className="w-5 h-5 text-primary-foreground" />
               </div>
-              <Activity className="w-4 h-4 text-green-400 animate-pulse" />
+              <Activity className="w-4 h-4 animate-pulse" style={{ color: "hsl(var(--status-online))" }} />
             </div>
             <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2 font-medium">
               {stat.label}
