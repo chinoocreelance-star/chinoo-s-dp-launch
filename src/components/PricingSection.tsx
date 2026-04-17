@@ -32,7 +32,7 @@ const PricingSection = () => (
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.15 }}
-        className="glass rounded-3xl p-8 sm:p-10 relative overflow-hidden glow-primary"
+        className="glass glass-border-glow rounded-3xl p-8 sm:p-10 relative overflow-hidden glow-primary hover-lift"
       >
         {/* Glow accent */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1 gradient-bg rounded-b-full" />

@@ -34,7 +34,7 @@ const FeaturesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="glass rounded-2xl p-7 flex gap-5 items-start hover:border-primary/30 transition-colors"
+            className="glass glass-border-glow rounded-2xl p-7 flex gap-5 items-start hover-lift hover:border-primary/40"
           >
             <div className="w-12 h-12 rounded-xl gradient-bg flex-shrink-0 flex items-center justify-center">
               <f.icon className="w-6 h-6 text-primary-foreground" />

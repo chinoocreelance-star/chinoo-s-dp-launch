@@ -32,7 +32,7 @@ const TrustSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.15 }}
-            className="glass rounded-2xl p-8 text-center hover:border-primary/30 transition-colors"
+            className="glass glass-border-glow rounded-2xl p-8 text-center hover-lift hover:border-primary/40"
           >
             <div className="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center mx-auto mb-5">
               <item.icon className="w-7 h-7 text-primary-foreground" />
