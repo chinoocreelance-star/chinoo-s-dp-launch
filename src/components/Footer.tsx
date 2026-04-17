@@ -1,6 +1,6 @@
 import { Phone, Mail, ShieldCheck, BadgeCheck, Lock, Sparkles, MessageCircle } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/923401670436?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20access.";
+const WHATSAPP_LINK = "https://wa.me/923298646906?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20access.";
 
 const Footer = () => (
   <footer className="relative pt-20 pb-10 px-4 border-t border-border/60 overflow-hidden">
@@ -53,8 +53,8 @@ const Footer = () => (
           </h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li>
-              <a href="tel:+923401670436" className="flex items-center gap-2.5 hover:text-foreground transition-colors">
-                <Phone className="w-4 h-4 text-primary" /> +92 340 1670436
+              <a href="tel:+923298646906" className="flex items-center gap-2.5 hover:text-foreground transition-colors">
+                <Phone className="w-4 h-4 text-primary" /> +92 329 8646906
               </a>
             </li>
             <li>
