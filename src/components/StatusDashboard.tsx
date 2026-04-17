@@ -1,7 +1,8 @@
-import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import { motion, useInView, useMotionValue, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Users, ShieldCheck, CheckCircle2, Timer, Activity } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
+import LiveTicker from "@/components/LiveTicker";
 
 type Stat = {
   icon: typeof Users;
@@ -137,13 +138,20 @@ const StatusDashboard = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="glass rounded-2xl p-6 hover:border-primary/40 transition-all hover:-translate-y-1"
+            className="glass glass-border-glow rounded-2xl p-6 hover-lift hover:border-primary/50"
           >
             <div className="flex items-start justify-between mb-5">
-              <div className="w-11 h-11 rounded-xl gradient-bg flex items-center justify-center">
+              <div className="w-11 h-11 rounded-xl gradient-bg flex items-center justify-center shadow-md">
                 <stat.icon className="w-5 h-5 text-primary-foreground" />
               </div>
-              <Activity className="w-4 h-4 animate-pulse" style={{ color: "hsl(var(--status-online))" }} />
+              {stat.label === "Service Stability" ? (
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: "hsl(var(--status-online))" }} />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ backgroundColor: "hsl(var(--status-online))" }} />
+                </span>
+              ) : (
+                <Activity className="w-4 h-4 animate-pulse" style={{ color: "hsl(var(--status-online))" }} />
+              )}
             </div>
             <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2 font-medium">
               {stat.label}
@@ -156,6 +164,16 @@ const StatusDashboard = () => (
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="mt-8"
+      >
+        <LiveTicker />
+      </motion.div>
     </div>
   </section>
 );
