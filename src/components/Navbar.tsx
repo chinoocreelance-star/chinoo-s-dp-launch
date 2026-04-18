@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import logo from "@/assets/chinoos-logo.png";
 
 const WHATSAPP_LINK = "https://wa.me/923298646906?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20access.";
 
@@ -11,12 +12,19 @@ const Navbar = () => (
     className="fixed top-0 left-0 right-0 z-50 glass-strong border-b border-border/40"
   >
     <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
-      <a href="#" className="flex items-center gap-2 group">
-        <div className="relative w-8 h-8 rounded-lg gradient-bg flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-          <Sparkles className="w-4 h-4 text-primary-foreground" />
+      <a href="#" className="flex items-center gap-2.5 group">
+        <div className="relative w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl" aria-hidden />
+          <img
+            src={logo}
+            alt="Chinoo's DP logo"
+            width={40}
+            height={40}
+            className="relative w-10 h-10 object-contain drop-shadow-[0_0_12px_hsl(var(--primary)/0.6)]"
+          />
         </div>
         <span className="font-display text-lg sm:text-xl font-bold tracking-tight">
-          Chinoo's<span className="gradient-text">DP</span>
+          Chinoo's <span className="gradient-text">DP</span>
         </span>
       </a>
 
