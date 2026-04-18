@@ -12,16 +12,16 @@ const Navbar = () => (
     transition={{ duration: 0.5 }}
     className="fixed top-0 left-0 right-0 z-50 glass-strong border-b border-border/40"
   >
-    <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
-      <Link to="/" className="flex items-center gap-2.5 group">
-        <div className="relative w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform">
+    <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
+      <Link to="/" className="flex items-center gap-3 sm:gap-4 group">
+        <div className="relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center group-hover:scale-105 transition-transform">
           <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl" aria-hidden />
           <img
             src={logo}
             alt="Chinoo's DP logo"
-            width={40}
-            height={40}
-            className="relative w-10 h-10 object-contain drop-shadow-[0_0_12px_hsl(var(--primary)/0.6)]"
+            width={56}
+            height={56}
+            className="relative w-12 h-12 sm:w-14 sm:h-14 object-contain drop-shadow-[0_0_14px_hsl(var(--primary)/0.65)]"
           />
         </div>
         <span className="font-display text-lg sm:text-xl font-bold tracking-tight">
