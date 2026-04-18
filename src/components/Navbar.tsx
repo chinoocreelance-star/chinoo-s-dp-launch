@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/chinoos-logo.png";
 
 const WHATSAPP_LINK = "https://wa.me/923298646906?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20access.";
@@ -12,7 +13,7 @@ const Navbar = () => (
     className="fixed top-0 left-0 right-0 z-50 glass-strong border-b border-border/40"
   >
     <div className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
-      <a href="#" className="flex items-center gap-2.5 group">
+      <Link to="/" className="flex items-center gap-2.5 group">
         <div className="relative w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform">
           <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl" aria-hidden />
           <img
@@ -26,13 +27,13 @@ const Navbar = () => (
         <span className="font-display text-lg sm:text-xl font-bold tracking-tight">
           Chinoo's <span className="gradient-text">DP</span>
         </span>
-      </a>
+      </Link>
 
       <div className="hidden md:flex items-center gap-7 text-sm text-muted-foreground font-medium">
-        <a href="#status" className="hover:text-foreground transition-colors">Status</a>
-        <a href="#features" className="hover:text-foreground transition-colors">Features</a>
-        <a href="#bonus" className="hover:text-foreground transition-colors">Bonus</a>
-        <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
+        <a href="/#features" className="hover:text-foreground transition-colors">Features</a>
+        <a href="/#bonus" className="hover:text-foreground transition-colors">Bonus</a>
+        <a href="/#pricing" className="hover:text-foreground transition-colors">Pricing</a>
+        <Link to="/blog" className="hover:text-foreground transition-colors">Blog</Link>
       </div>
 
       <a
