@@ -1,4 +1,5 @@
-import { Phone, Mail, ShieldCheck, BadgeCheck, Lock, Sparkles, MessageCircle } from "lucide-react";
+import { Phone, Mail, ShieldCheck, BadgeCheck, Lock, MessageCircle } from "lucide-react";
+import logo from "@/assets/chinoos-logo.png";
 
 const WHATSAPP_LINK = "https://wa.me/923298646906?text=Hi%20Chinoo's%20DP!%20I%20want%20Canva%20Pro%20access.";
 
@@ -10,12 +11,20 @@ const Footer = () => (
       <div className="grid gap-10 md:gap-8 md:grid-cols-12 mb-12">
         {/* Brand */}
         <div className="md:col-span-5">
-          <a href="#" className="inline-flex items-center gap-2 mb-4">
-            <div className="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center shadow-md">
-              <Sparkles className="w-4 h-4 text-primary-foreground" />
+          <a href="#" className="inline-flex items-center gap-2.5 mb-4">
+            <div className="relative w-10 h-10 flex items-center justify-center">
+              <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl" aria-hidden />
+              <img
+                src={logo}
+                alt="Chinoo's DP logo"
+                width={40}
+                height={40}
+                loading="lazy"
+                className="relative w-10 h-10 object-contain drop-shadow-[0_0_12px_hsl(var(--primary)/0.6)]"
+              />
             </div>
             <span className="font-display text-xl font-bold">
-              Chinoo's<span className="gradient-text">DP</span>
+              Chinoo's <span className="gradient-text">DP</span>
             </span>
           </a>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-sm mb-5">
