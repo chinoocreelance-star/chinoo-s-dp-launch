@@ -46,9 +46,10 @@ const Footer = () => (
             Quick Links
           </h4>
           <ul className="space-y-2.5 text-sm text-muted-foreground">
-            <li><a href="#features" className="hover:text-foreground transition-colors">Features</a></li>
-            <li><a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
-            <li><a href="#bonus" className="hover:text-foreground transition-colors">Gamma Bonus</a></li>
+            <li><a href="/#features" className="hover:text-foreground transition-colors">Features</a></li>
+            <li><a href="/#pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
+            <li><a href="/#bonus" className="hover:text-foreground transition-colors">Gamma Bonus</a></li>
+            <li><a href="/blog" className="hover:text-foreground transition-colors">Blog</a></li>
             <li><a href="#" className="hover:text-foreground transition-colors">FAQ</a></li>
             <li><a href="#" className="hover:text-foreground transition-colors">Terms of Service</a></li>
             <li><a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a></li>
